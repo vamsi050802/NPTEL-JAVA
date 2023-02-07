@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Exercise1_4 {
+    public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   int n=sc.nextInt();
+           int result=0;
+           int orgnum=n;
+        int num=0;
+        
+        int rem=0;
+        while(orgnum!=0)
+        {
+            orgnum=orgnum/10;
+            num++;
+        }
+        orgnum=n;
+        while(orgnum!=0)
+        {
+            rem=orgnum%10;
+            result+=Math.pow(rem,3);
+            orgnum=orgnum/10;
+        }
+        if(result == n)
+        {
+             System.out.print(1);    }
+        else
+        {
+             System.out.print(0);  }
+        
+        }
+        }
